@@ -43,9 +43,10 @@ A simple Publisher-Subscriber notification system implemented in Python using Fl
   {
   "message": "Subscriber unsubscribed from topic successfully"
   }
-
-Select EC2 from the Services Menu
-Select Launch Instance and Create an EC2 Instance. 
+  
+- **Hosting on AWS**
+- Select EC2 from the Services Menu
+- Select Launch Instance and Create an EC2 Instance. 
 Choose appropriate OS. I have used AWS Linux
 Create a Key Pair. (This .pem/ppk file will be the specific key whose presence will enable you to login from anywhere)
 We have successfully created & launched the instance.
@@ -68,14 +69,14 @@ For this we have three methods:
  10. unzip the main.zip file and navigate in to the Notification-System-main folder using the cd command.
  11. move all the contents from the folder to “/var/www/html/”
 
-Edit the Inbound Rules
-check the status of httpd and then enable & start httpd using the following commands
+- Edit the Inbound Rules
+- Check the status of httpd and then enable & start httpd using the following commands
   systemctl status httpd
   systemctl enable httpd
   systemctl start httpd
-Now open the public ipv4 address allocated to the EC2 instance we created in new tab. We will be able to see the Website.
+- Now open the public ipv4 address allocated to the EC2 instance we created in new tab. We will be able to see the Website.
 
-We have Successfully Deployed the API Server on AWS Cloud!
+- We have Successfully Deployed the API Server on AWS Cloud!
 
   
 

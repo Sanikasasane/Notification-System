@@ -1,0 +1,10 @@
+{
+	"info": {
+		"_postman_id": "e20e0fab-06ab-4526-a131-e85d3341509c",
+		"name": "PubSub API",
+		"description": "# _**Subscribe API**_\n\n- **Method**: POST\n    \n- **URL**: `http://localhost:5000/subscribe`\n    \n- **Headers**:\n    \n    - Content-Type: application/json\n        \n- **Body** (raw JSON):\n    \n\n``` json\n{\n  \"topicId\": \"topic1\",\n  \"subscriberId\": \"subscriber1\"\n}\n\n ```\n\n**Example Response:**\n\n``` json\n{\n  \"message\": \"Subscriber subscriber1 subscribed to topic topic1\"\n}\n\n ```\n\n# _**Notify API**_\n\n- **Method**: GET\n    \n- **URL**: `http://localhost:5000/notify/topic1`\n    \n- **Example Response**\n    \n\n``` json\n{\n  \"message\": \"Notifying subscribers of topic topic1: subscriber1\"\n}\n\n\n ```\n\n#   \n_**Unsubscribe API**_\n\n- **Method**: POST\n    \n- **URL**: `http://localhost:5000/unsubscribe`\n    \n- **Headers**:Content-Type: application/json\n    \n- **Body** (raw JSON):\n    \n\n``` json\n{\n  \"topicId\": \"topic1\",\n  \"subscriberId\": \"subscriber1\"\n}\n\n ```\n\n- **Example Response**:\n    \n\n``` json\n{\n  \"message\": \"Subscriber subscriber1 unsubscribed from topic topic1\"\n}\n\n\n ```\n\n  \n  \n  \n  \n\n#   \n  \n  \n\n#",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36253308"
+	},
+	"item": []
+}
